@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 20px 80px;
+}
+
+.directory-menu{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-gap: 7.5px;
+  
+}
+
+.menu-item{
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+}
+
+.is-large{
+    grid-auto-columns: fit-content(50%); 
+    height: 380px;
+}
