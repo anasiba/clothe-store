@@ -27,23 +27,23 @@ export default class SignIn extends Component {
 
     render() {
         return (
-            <div className='sign-in' onSubmit={this.handleSubmit}>
+            <div className='sign-in' >
                 <h2 className='title'>I already have an account</h2>
                 <span>Sing in with your email and password</span>
 
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <FormInput
-                        name="email"
+                        name="displayName"
                         type='email'
                         value={this.state.email}
-                        label="email"
+                        label="Email"
                         onChange={this.handleChange}
                         required />
 
                     <FormInput
                         name="password"
                         type='password'
-                        label='password'
+                        label='Password'
                         value={this.state.password}
                         onChange={this.handleChange}
                         required />
